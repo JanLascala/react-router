@@ -26,7 +26,9 @@ header {
 
 main {
   .Jumbo {
-
+    height: auto;
+    width: 1000px;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.horrorgeeklife.com%2Fwp-content%2Fuploads%2F2019%2F05%2Fdaria-watching-recommendation-videoSixteenByNineJumbo1600.jpg&f=1&ipt=9f7bfc82206dee0e015d6735c97e91368b1c6f3779bc4e69aaf17e8137bab45e);
+    background-size: cover;
   }
 }
