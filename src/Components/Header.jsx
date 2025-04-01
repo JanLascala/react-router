@@ -1,25 +1,34 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+
 export default function Header() {
     return (
         <>
-            <nav className="navbar navbar-expand-sm navbar-light bg-primary">
-                <div className="container-fluid">
+            <header className="p-3">
+                <nav className="navbar">
+                    <div className="container-fluid d-flex justify-content-between align-items-center">
+                        {/* Logo */}
+                        <img
+                            className="logo"
+                            src="https://template.pro/wp-content/uploads/2015/09/2000px-MTV_Logo.svg_.png"
+                            alt="Logo"
+                        />
 
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarID">
-                        <div className="navbar-nav">
-                            <NavLink className="nav-link text-light" to="/">Home</NavLink>
-                            <NavLink className="nav-link text-light" to="/posts">Posts</NavLink>
-                            <NavLink className="nav-link text-light" to="/about">About Us</NavLink>
-
-
+                        {/* Navigation Links */}
+                        <div className="d-flex gap-2">
+                            <NavLink to="/" className="btn btn-dark">
+                                Home
+                            </NavLink>
+                            <NavLink to="/posts" className="btn btn-dark">
+                                Posts
+                            </NavLink>
+                            <NavLink to="/about" className="btn btn-dark">
+                                About Us
+                            </NavLink>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </header>
+
         </>
-    )
+    );
 }
