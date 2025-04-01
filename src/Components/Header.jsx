@@ -1,16 +1,20 @@
+import { NavLink } from "react-router-dom"
 export default function Header() {
     return (
         <>
-            <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">primary</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+            <nav className="navbar navbar-expand-sm navbar-light bg-primary">
+                <div className="container-fluid">
+
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                         aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarID">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <div className="collapse navbar-collapse" id="navbarID">
+                        <div className="navbar-nav">
+                            <NavLink className="nav-link text-light" to="/">Home</NavLink>
+                            <NavLink className="nav-link text-light" to="/posts">Posts</NavLink>
+                            <NavLink className="nav-link text-light" to="/about">About Us</NavLink>
+
 
                         </div>
                     </div>
