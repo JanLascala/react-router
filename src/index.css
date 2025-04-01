@@ -33,9 +33,13 @@ main {
   }
 }
 
-.photo {
-  width: 100px;
-  height: auto;
+.card {
+  width: 18rem;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
 }
 
 .aboutMTV {
