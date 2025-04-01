@@ -32,3 +32,17 @@ main {
     background-size: cover;
   }
 }
+
+.photo {
+  width: 100px;
+  height: auto;
+}
+
+.aboutMTV {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XHkBa26-sIhqStjowsf9YgHaEK%26pid%3DApi&f=1&ipt=11946e3d2d63b93ce6204eb7a1cbc8f5883eb54a6f3b671056d49141b9b3ab62&ipo=images);
+
+}
+
+.AboutP {
+  background-color: rgba(0, 0, 0, 0.222);
+}
