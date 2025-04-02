@@ -1,4 +1,5 @@
 import mtvCartoons from "../Data/Characters"
+import { Link } from "react-router-dom";
 
 export default function Cards({ id, image, character, show }) {
     return (
@@ -11,9 +12,9 @@ export default function Cards({ id, image, character, show }) {
                 />
                 <h5 className="card-title">{character}</h5>
                 <p className="card-text">{show}</p>
-                <button className="btn btn-primary mt-2">
+                <Link to={`/posts/${id}`} className="btn btn-primary mt-2">
                     View Details
-                </button>
+                </Link>
             </div>
         </div>
     );
