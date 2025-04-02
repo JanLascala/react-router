@@ -5,7 +5,7 @@ import DefaultLayout from "./DefaultLayout/DefaultLayout";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Posts from "./Pages/Posts";
-
+import Post from "./Components/Post";
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route Component={DefaultLayout}>
             <Route path="/" Component={Home} />
             <Route path="/posts" Component={Posts} />
+            <Route path="/posts/:id" Component={Post} />
             <Route path="/about" Component={About} />
 
           </Route>

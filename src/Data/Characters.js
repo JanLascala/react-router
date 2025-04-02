@@ -41,6 +41,12 @@ const mtvCartoons = [
         character: "Jim (The Head)",
         show: "The Head"
     },
-
+    {
+        id: 8,
+        image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.CuuX0W4IiZCBaBq_OAYOtQHaHa%26pid%3DApi&f=1&ipt=832f95bad95a0b93422e6c093d0f83f0b67db96c0adcd9737ba1af5b9c8274ce&ipo=images",
+        character: "Spike Spiegel",
+        show: "Cowboy Bebop"
+    }
 ];
+
 export default mtvCartoons;
