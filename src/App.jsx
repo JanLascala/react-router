@@ -14,6 +14,7 @@ function App() {
           <Route Component={DefaultLayout}>
             <Route path="/" Component={Home} />
             <Route path="/posts" Component={Posts} />
+            <Route path="/posts:id" Component={Post} />
             <Route path="/about" Component={About} />
 
           </Route>
