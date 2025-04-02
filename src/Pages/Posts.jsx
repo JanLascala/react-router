@@ -6,7 +6,15 @@ export default function Posts() {
     const navigate = useNavigate();
 
     const CartoonCard = ({ cartoon }) => {
-        return ()
+        return (
+            <div className="row">
+                {mtvCartoons.map((cartoon, index) => (
+                    <div key={index} id={index}>
+                        {cartoon.name}
+                    </div>
+                ))}
+            </div>
+        )
 
 
     };
