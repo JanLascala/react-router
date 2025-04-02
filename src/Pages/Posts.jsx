@@ -1,7 +1,9 @@
 import mtvCartoons from "../Data/Characters";
+import { useNavigate } from "react-router-dom";
 
 export default function Posts() {
     console.log(mtvCartoons);
+    const navigate = useNavigate();
 
     const CartoonCard = ({ cartoon }) => {
         return (
@@ -14,6 +16,12 @@ export default function Posts() {
                     />
                     <h5 className="card-title">{cartoon.character}</h5>
                     <p className="card-text">{cartoon.show}</p>
+                    <button
+                        className="btn btn-primary mt-2"
+                        onClick={() => navigate(`/post/${cartoon.id}`)}
+                    >
+                        View Details
+                    </button>
                 </div>
             </div>
         );

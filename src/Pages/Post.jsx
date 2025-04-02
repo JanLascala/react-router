@@ -14,7 +14,19 @@ export default function Post() {
 
 
     return (
-        
+        <>
+            <button></button>
+            <div className="container d-flex">
+                <div>
+                    <img src="cartoon.image" alt="cartoon.image" />
+                </div>
+                <div>
+                    <h3>{cartoon.character}</h3>
+                    <p>{cartoon.show}</p>
+                </div>
+            </div>
+        </>
+
 
     )
 }
