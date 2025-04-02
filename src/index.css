@@ -50,3 +50,9 @@ main {
 .AboutP {
   background-color: rgba(0, 0, 0, 0.222);
 }
+
+.portrait {
+  width: 500px;
+  height: auto;
+
+}
